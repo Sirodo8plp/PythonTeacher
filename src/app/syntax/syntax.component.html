@@ -1,0 +1,100 @@
+<app-navigation></app-navigation>
+
+<h1>Python Syntax</h1>
+<br />
+<h2>Execute Python Syntax</h2>
+<p>
+  As we learned in the previous page, Python syntax can be executed by writing
+  directly in the Command Line:
+</p>
+<app-command [command]="commands![0]"></app-command>
+<p>
+  Or by creating a python file on the server, using the .py file extension, and
+  running it in the Command Line:
+</p>
+<app-command [command]="commands![1]"></app-command>
+<h2>Python Indentation</h2>
+<p>
+  Indentation refers to the spaces at the beginning of a code line. Where in
+  other programming languages the indentation in code is for readability only,
+  the indentation in Python is very important. Python uses indentation to
+  indicate a block of code.
+</p>
+
+<app-example [exampleName]="">
+  <span style="color: blue">if</span>
+  <span style="color: red"> 5 </span> > <span style="color: red"> 2</span>:
+  <pre
+    style="color: blue"
+  >     print(<span style="color: red">"Five is greater than two!"</span>)</pre>
+</app-example>
+<p>Python will give you an error if you skip the indentation:</p>
+<app-example [exampleName]="'Syntax Error:'">
+  <span style="color: blue">if</span>
+  <span style="color: red"> 5 </span> > <span style="color: red"> 2</span>:
+  <pre
+    style="color: blue"
+  >print(<span style="color: red">"Five is greater than two!"</span>)</pre>
+</app-example>
+<p>
+  The number of spaces is up to you as a programmer, the most common use is
+  four, but it has to be at least one.
+</p>
+<app-example>
+  <span style="color: blue">if</span>
+  <span style="color: red"> 5 </span> > <span style="color: red"> 2</span>:
+  <br />
+  <pre
+    style="color: blue"
+  >     print(<span style="color: red">"Five is greater than two!"</span>)</pre>
+  <span style="color: blue">if</span>
+  <span style="color: red"> 5 </span> > <span style="color: red"> 2</span>:
+  <br />
+  <pre
+    style="color: blue"
+  >             print(<span style="color: red">"Five is greater than two!"</span>)</pre>
+</app-example>
+<p>
+  You have to use the same number of spaces in the same block of code, otherwise
+  Python will give you an error:
+</p>
+<app-example [exampleName]="'Syntax Error:'">
+  <span style="color: blue">if</span>
+  <span style="color: red"> 5 </span> > <span style="color: red"> 2</span>:
+  <pre
+    style="color: blue"
+  >     print(<span style="color: red">"Five is greater than two!"</span>)</pre>
+  <br />
+  <span style="color: blue">if</span>
+  <span style="color: red"> 5 </span> > <span style="color: red"> 2</span>:
+  <pre
+    style="color: blue"
+  >             print(<span style="color: red">"Five is greater than two!"</span>)</pre>
+</app-example>
+<h2>Python Variables</h2>
+<p>In Python, variables are created when you assign a value to it:</p>
+<app-example [exampleName]="'Variables in Python:'">
+  <pre>x = <span style="color: red;">5</span></pre>
+  <pre>y = <span style="color: red;">"Hello, World!"</span></pre>
+</app-example>
+<p>Python has no command for declaring a variable.</p>
+<h2>Comments</h2>
+<p>
+  Python has commenting capability for the purpose of in-code documentation.
+  Comments start with a #, and Python will render the rest of the line as a
+  comment:
+</p>
+<app-example [exampleName]="'Comments in Python:'">
+  <pre style="color: green">#This is a comment.</pre>
+  <pre
+    style="color: blue"
+  >print(<span style="color: red">"Five is greater than two!"</span>)</pre>
+</app-example>
+<app-exercises
+  *ngIf="exercise"
+  [chapterID]="0"
+  [correctAnswer]="exercise.solution"
+  [exerciseTopic]="exercise.topic"
+  [exerciseProblem]="exercise.problem"
+>
+</app-exercises>

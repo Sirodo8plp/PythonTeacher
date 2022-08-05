@@ -1,0 +1,68 @@
+<app-navigation></app-navigation>
+
+<h1>Python Get Started</h1>
+<br />
+<h2>Python Install</h2>
+<p>
+  Many PCs and Macs will have python already installed. To check if you have
+  python installed on a Windows PC, search in the start bar for Python or run
+  the following on the Command Line (cmd.exe):
+</p>
+<app-command [command]="commands[0]"></app-command>
+<p>
+  To check if you have python installed on a Linux or Mac, then on linux open
+  the command line or on Mac open the Terminal and type:
+</p>
+<app-command [command]="commands[1]"></app-command>
+<p>
+  If you find that you do not have Python installed on your computer, then you
+  can download it for free from the following website:
+  <a href="https://www.python.org/">https://www.python.org/</a>
+</p>
+<h2>Python Quickstart</h2>
+<p>
+  Python is an interpreted programming language, this means that as a developer
+  you write Python (.py) files in a text editor and then put those files into
+  the python interpreter to be executed. The way to run a python file is like
+  this on the command line:
+</p>
+<app-command [command]="commands[2]"></app-command>
+<p>
+  Where "helloworld.py" is the name of your python file. Let's write our first
+  Python file, called helloworld.py, which can be done in any text editor.
+</p>
+<app-example [exampleName]="'helloworld.py'"
+  ><span style="color: blue">print</span>(<span style="color: red"
+    >"Hello World!"</span
+  >)
+</app-example>
+<p>
+  Simple as that. Save your file. Open your command line, navigate to the
+  directory where you saved your file, and run:
+</p>
+<app-command [command]="commands[3]"></app-command>
+<p>The output should read:</p>
+<app-command [command]="commands[4]"></app-command>
+<p>Congratulations, you have written and executed your first Python program.</p>
+<h2>The Python Command Line</h2>
+<p>
+  To test a short amount of code in python sometimes it is quickest and easiest
+  not to write the code in a file. This is made possible because Python can be
+  run as a command line itself. Type the following on the Windows, Mac or Linux
+  command line:
+</p>
+<app-command [command]="commands[5]"></app-command>
+<p>Or, if the "python" command did not work, you can try "py":</p>
+<app-command [command]="commands[6]"></app-command>
+<p>
+  From there you can write any python, including our hello world example from
+  earlier in the tutorial:
+</p>
+<app-command [command]="commands[7]"></app-command>
+<p>Which will write "Hello, World!" in the command line:</p>
+<app-command [command]="commands[8]"></app-command>
+<p>
+  Whenever you are done in the python command line, you can simply type the
+  following to quit the python command line interface:
+</p>
+<app-command [command]="commands[9]"></app-command>

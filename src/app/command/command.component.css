@@ -1,0 +1,30 @@
+.command {
+  background-color: lightgrey;
+  border-radius: 0.9rem;
+  padding: 1rem;
+  z-index: 0;
+}
+
+.command p {
+  margin: 0 !important;
+}
+
+.command--text {
+  background-color: black;
+  color: white;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.command--text::before {
+  content: "";
+  height: 100%;
+  width: 0.25rem;
+  background-color: green;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: block;
+  z-index: 2;
+}

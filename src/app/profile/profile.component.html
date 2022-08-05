@@ -1,0 +1,18 @@
+<app-navigation></app-navigation>
+<div class="alert alert-warning" *ngIf="testComment">{{ testComment }}</div>
+<br />
+<h2>Chapter Exercises</h2>
+<br />
+
+<div class="card">
+  <p-chart type="bar" [data]="plotExercisesData"></p-chart>
+</div>
+<br />
+<h2 *ngIf="plotTestsData">Tests</h2>
+
+<p *ngIf="plotTestsData">
+  You need at least 60% in order to have successfully passed the test.
+</p>
+<div class="card" *ngIf="plotTestsData">
+  <p-chart type="bar" [data]="plotTestsData"></p-chart>
+</div>

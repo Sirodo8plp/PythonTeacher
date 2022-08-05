@@ -1,0 +1,33 @@
+<app-navigation></app-navigation>
+<h2>Time for a Test!</h2>
+
+<div [style.display]="display">
+  <form>
+    <div class="exerciseOuter" *ngFor="let exercise of exercises; index as i">
+      <div class="exerciseInner">
+        <h2>Exercise</h2>
+        <p>{{ exercise.topic }}</p>
+        <p class="exercise">
+          <input
+            type="text"
+            [(ngModel)]="answers[i]"
+            name="answer1"
+            id="answer1"
+          />{{ exercise.problem }}
+        </p>
+      </div>
+    </div>
+
+    <button type="button" class="btn btn-success" (click)="onSubmit()">
+      Submit
+    </button>
+  </form>
+</div>
+
+<div class="alert alert-warning" *ngIf="warningMessage">
+  <p>You completed the test. {{ warningMessage }}</p>
+</div>
+
+<div class="alert alert-success" *ngIf="successMessage">
+  <p>You completed the test. {{ successMessage }}</p>
+</div>
