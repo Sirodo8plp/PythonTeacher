@@ -1,0 +1,34 @@
+* {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+body {
+  padding: 1rem;
+}
+
+pre {
+  margin: 0 !important;
+}
+
+.exerciseOuter {
+  border-radius: 0.9rem;
+  background-color: #282a35;
+  padding: 1rem;
+  color: #fff;
+}
+
+.exerciseOuter h2 {
+  margin: 1.25rem 0rem 0rem 0rem !important;
+}
+
+.exerciseInner {
+  border-radius: 0.9rem;
+  background-color: #fff;
+  padding: 1rem;
+  color: #000;
+}
+
+.exerciseInner h2 {
+  margin: 1.25rem 0rem 0rem 0rem !important;
+}

@@ -1,0 +1,22 @@
+<div [style.display]="isCompleted ? 'none' : 'block'">
+  <form>
+    <div class="exerciseOuter">
+      <h2>Test Yourself With Exercises</h2>
+      <div class="exerciseInner">
+        <h2>Exercise</h2>
+        <p>{{ exerciseTopic }}</p>
+        <input
+          type="text"
+          [(ngModel)]="userAnswer"
+          name="userAnswer"
+          id="answer"
+        />{{ exerciseProblem }}
+        <p class="exercise"></p>
+      </div>
+      <button type="button" class="btn btn-success" (click)="onSubmit()">
+        Check Answer
+      </button>
+    </div>
+  </form>
+</div>
+<div [ngClass]="cssClass!">{{ response }}</div>

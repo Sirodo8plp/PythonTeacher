@@ -1,0 +1,70 @@
+<h1>Learn Python Today</h1>
+
+<div class="container">
+  <div class="row justify-center-text">
+    <div class="col">
+      <h2>Register</h2>
+      <form>
+        <div class="mb-2">
+          <label for="registerUsername" class="form-label">Username</label>
+          <input
+            type="text"
+            name="registerUsername"
+            id="registerUsername"
+            [(ngModel)]="registerUsername"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="registerPassword" class="form-label mt-3">Password</label>
+          <input
+            type="password"
+            name="registerPassword"
+            id="registerPassword"
+            [(ngModel)]="registerPassword"
+            class="form-control"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          (click)="RegisterHandle()"
+        >
+          Register
+        </button>
+      </form>
+      <div class="alert alert-danger" *ngIf="registerError">
+        {{ registerError }}
+      </div>
+    </div>
+    <div class="col">
+      <h2>Login</h2>
+      <form>
+        <div class="mb-2">
+          <label for="loginUsername" class="form-label">Username</label>
+          <input
+            type="text"
+            name="loginUsername"
+            id="loginUsername"
+            [(ngModel)]="loginUsername"
+            class="form-control"
+          />
+        </div>
+        <div class="mb-2">
+          <label for="loginPassword" class="form-label mt-3">Password</label>
+          <input
+            type="password"
+            name="loginPassword"
+            id="loginPassword"
+            [(ngModel)]="loginPassword"
+            class="form-control"
+          />
+        </div>
+        <button type="button" class="btn btn-primary" (click)="LoginHandle()">
+          Sign In
+        </button>
+      </form>
+      <div class="alert alert-danger" *ngIf="loginError">{{ loginError }}</div>
+    </div>
+  </div>
+</div>

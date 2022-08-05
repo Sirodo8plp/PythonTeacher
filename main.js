@@ -15,13 +15,7 @@ function createWindow() {
     },
   });
 
-  mainWindow.loadURL(
-    url.format({
-      pathname: path.join(__dirname, `/dist/python-teacher/index.html`),
-      protocol: "file:",
-      slashes: true,
-    })
-  );
+  mainWindow.loadFile("dist/python-teacher/index.html");
 
   mainWindow.on("closed", function () {
     mainWindow = null;

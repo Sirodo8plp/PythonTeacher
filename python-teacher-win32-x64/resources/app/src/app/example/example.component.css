@@ -1,0 +1,29 @@
+.exampleContainer {
+  border-radius: 0.9rem;
+  background-color: lightgrey;
+  padding: 1rem;
+}
+
+.exampleHeading {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.exampleCode {
+  background-color: white;
+  color: black;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.exampleCode::before {
+  content: "";
+  height: 100%;
+  width: 0.25rem;
+  background-color: green;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  display: block;
+  z-index: 2;
+}
