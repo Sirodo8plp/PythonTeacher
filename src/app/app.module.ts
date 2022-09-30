@@ -17,6 +17,7 @@ import { PracticeComponent } from './practice/practice.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ChartModule } from 'primeng/chart';
+import { UserManualComponent } from './user-manual/user-manual.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { ChartModule } from 'primeng/chart';
     PracticeComponent,
     HomepageComponent,
     NavigationComponent,
+    UserManualComponent,
   ],
   imports: [
     BrowserModule,
